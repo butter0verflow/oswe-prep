@@ -6,7 +6,7 @@ import concurrent.futures
 import math
 from bs4 import BeautifulSoup
 
-url = "https://ac131f581f3e335d802a495f00980071.web-security-academy.net/"
+url = "https://acef1f7b1e7831a78097014200b30043.web-security-academy.net/"
 char_list = string.ascii_letters+string.digits
 s = requests.Session()
 

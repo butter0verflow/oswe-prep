@@ -1,13 +1,13 @@
 # Retrieving data from other database tables
-# Examining DB- querying the database type and version on non-Oracle
+# Examining DB- listing the database contents on non-Oracle databases
 
 import requests
 from bs4 import BeautifulSoup
 import re
 
 # 2 columns - strings
-url = "https://ac581fc81f29ddc680eb390300bd0011.web-security-academy.net/filter?category=Lifestyle"
-url_login = "https://ac581fc81f29ddc680eb390300bd0011.web-security-academy.net/login"
+url = "https://ac651f831ff94c158089321000b700cb.web-security-academy.net/filter?category=Lifestyle"
+url_login = "https://ac651f831ff94c158089321000b700cb.web-security-academy.net/login"
 
 s = requests.Session()
 

